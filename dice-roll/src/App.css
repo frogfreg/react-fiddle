@@ -1,0 +1,77 @@
+.Die img {
+  max-width: 100%;
+}
+.rolling {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+.RollDice-grid {
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: 20% 20%;
+  justify-content: space-evenly;
+}
+
+.RollDice {
+  text-align: center;
+}
+
+.RollDice button {
+  transition-duration: 0.5s;
+  position: relative;
+  top: 20px;
+  background-color: #f87575; /* Green */
+  border: none;
+  border-radius: 15px;
+  color: #7600a8;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2vw;
+}
+.RollDice button:hover {
+  background-color: #7e6c6c; /* Green */
+}
+body {
+  background: #800080; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffc0cb,
+    #800080
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffc0cb,
+    #800080
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  20% {
+    transform: translate(-15px, 0px) rotate(180deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(6deg);
+  }
+
+  60% {
+    transform: translate(-15px, 1px) rotate(25deg);
+  }
+
+  80% {
+    transform: translate(-15px, -1px) rotate(2deg);
+  }
+
+  100% {
+    transform: translate(1px, -18px) rotate(-3deg);
+  }
+}

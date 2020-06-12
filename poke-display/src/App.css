@@ -1,0 +1,43 @@
+.Pokedex-grid {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: auto auto;
+  align-content: space-around;
+  justify-content: space-evenly;
+  grid-row-gap: 10px;
+}
+
+.Pokedex {
+  
+  text-align: center;
+}
+
+.Pokecard {
+  color: #122313;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 15px;
+  background-color: #11998e;
+  text-align: center;
+}
+.Pokecard img {
+  max-width: 100%;
+}
+body {
+  background: #4b79a1; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #283e51,
+    #4b79a1
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #283e51,
+    #4b79a1
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 1vw;
+}
+.App{
+  text-align: center;
+  color: #7af07b;
+}

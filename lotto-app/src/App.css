@@ -1,0 +1,52 @@
+body {
+  background: #654ea3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eaafc8,
+    #654ea3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #eaafc8,
+    #654ea3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.LotteryBall{
+  text-align: center;
+  font-size: 4vw;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  background-color: aquamarine;
+}
+.LotteryBall h2{
+  position: relative;
+  top:7px;
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
+
+
+.Lottery-grid {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.App {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 70%;
+  text-align: center;
+  /* grid-auto-flow: row; */
+}
+
+.Lottery {
+  border-radius: 15px;
+  background-color: blueviolet;
+  text-align: center;
+}
